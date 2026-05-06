@@ -1,0 +1,1 @@
+for bookstore, make instead of book cards, event cards (parking, new books, sales, etc.)

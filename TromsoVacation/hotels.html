@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Tromsø</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!--fonts-->
+  <link rel="stylesheet" href="https://use.typekit.net/acz0sfo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="preload" as="script" href="script.js">
+  <link rel="prefetch" href="img/snowGif.gif">
+  <link rel="prefetch" href="img/snowBg2.jpg">
+  <style>
+    .headerPic {
+      background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("img/tromsoPics/tromsoWide.png");
+      background-size: cover;
+      background-position-y: 0%;
+    }
+
+    .headSub {
+      color: white;
+    }
+  </style>
+</head>
+
+<body id="hotels">
+  <nav class="navbar navbar-expand-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="img-fluid rounded-pill" src="img/flag.png"
+          style="height:40px;"></a>
+      <!--searchicon-->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="before">
+        <li class="nav-item">
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <svg id="search" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!--close icon-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="hotels.html">hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurants.html">restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="things-to-do.html">things to do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="important-information.html">important information</a>
+        </ul>
+      </div>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="after">
+        <li class="nav-item">
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <svg id="search" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="snow-overlay"></div>
+  <div class="snow-overlay"></div>
+  <div class="container-fluid">
+    <!--header open-->
+    <div class="row">
+      <div class="col-12 headerPic">
+        <h1>Hotels</h1>
+      </div>
+    </div>
+    <!--header close-->
+    <div class="spacer"></div>
+    <!--spacer close-->
+    <div class="row">
+      <div id="pineBorder" class="col-12"></div>
+    </div>
+    <!--content start-->
+    <div class="row" style="margin-top: 0;">
+      <div class="col-0 col-md-1 side"></div>
+      <div class="col-12 col-md-10 middle">
+        <h2 class="pageSubH">Experience the hotels of Tromsø</h2>
+        <!--body-->
+        <div class="row">
+
+          <div class="col-12 col-lg-4 p-2">
+            <div class="card rounded-0 h-100 loweredCard border border-0">
+              <div id="lodge"></div><br><br><br><br>
+              <div class="lowCardBody" style="background-position: 50% 39%;">
+                <div class="row">
+                  <div class="col-12 col-sm-5 col-md-5 col-lg-12">
+                    <div id="img1" class="img">
+                      <img src="img/hotels/campingLodge.jpg" class="card-img-top img-fluid rounded-0 cardImg">
+                      <button onclick="showMap(1);" data-bs-toggle="modal" data-bs-target="#mapModal">See Map</button>
+                    </div>
+                  </div><!--img-->
+                  <div class="col-12 col-sm-7 col-md-7 col-lg-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Tromsø Lodge and Camping</h5>
+                      <p class="card-text sizedText change">The Tromsø Lodge and Camping Ground is a camping ground across the
+                        fjord from
+                        Tromsø itself, and in addition to campgrounds it also has comfortable lodges for guests to stay
+                        in and relax.</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <hr>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item" style="background: transparent;">
+                        <h2 class="accordion-header" style="background: transparent;">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
+                            style="background: transparent;">
+                            Additional Information
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <table>
+                              <tr>
+                                <td class="pointerCell"></td>
+                                <td>Arthur Arntzens Veg 10, 9020 Tromsdalen, Norway</td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                            <table>
+                              <tr>
+                                <td class="phoneCell"></td>
+                                <td>+47 77 63 80 37</td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                            <table>
+                              <tr>
+                                <td class="emailCell"></td>
+                                <td><a href="mailto:post@tromsocamping.no">post@tromsocamping.no</a></td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                            <table>
+                              <tr>
+                                <td class="webCell"></td>
+                                <td><a href="https://tromsolodgeandcamping.no/"
+                                    target="_blank">https://tromsolodgeandcamping.no/</a></td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 p-2">
+            <div class="card rounded-0 h-100 loweredCard border border-0">
+              <div id="scandic"></div><br><br><br><br>
+              <div class="lowCardBody" style="background-position: 76% 4%;">
+                <div class="row">
+                  <div class="col-12 col-sm-5 col-md-5 col-lg-12">
+                    <div id="img2" class="img">
+                      <img src="img/hotels/scandicIshavhotel.jpg" class="card-img-top img-fluid rounded-0 cardImg">
+                      <button onclick="showMap(2);" data-bs-toggle="modal" data-bs-target="#mapModal">See Map</button>
+                    </div>
+                  </div><!--img-->
+                  <div class="col-12 col-sm-7 col-md-7 col-lg-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Scandic Ishavshotel Hotel</h5>
+                      <p class="card-text sizedText change">Sometimes called the 'Paris of the North', the Scandic Ishavshotel
+                        is
+                        positioned on the edge of the Tromsø bay, giving its
+                        guests a spectacular view of the water as well as the Norwegian mountains.</p>
+
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <hr>
+                    <div class="accordion accordion-flush" id="accordionFlushExample1">
+                      <div class="accordion-item" style="background: transparent;">
+                        <h2 class="accordion-header" style="background: transparent;">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree" style="background: transparent;">Additional Information
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample1">
+                          <div class="accordion-body">
+                            <table>
+                              <tr>
+                                <td class="pointerCell"></td>
+                                <td>Fredrik Langesgate 2, 9008 Tromsø, Norway</td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                            <table>
+                              <tr>
+                                <td class="phoneCell"></td>
+                                <td>+47 77 66 64 01</td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                            <table>
+                              <tr>
+                                <td class="emailCell"></td>
+                                <td><a class="disabled">no email available</a></td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                            <table>
+                              <tr>
+                                <td class="webCell"></td>
+                                <td><a href="https://www.scandichotels.no/hotell/norge/tromso/scandic-ishavshotel"
+                                    target="_blank">https://www.scandichotels.no/hotell/norge/tromso/scandic-ishavshotel</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 p-2">
+            <div class="card rounded-0 h-100 loweredCard border border-0">
+              <div id="cityHotel"></div><br><br><br><br>
+              <div class="lowCardBody" style="background-position: 84% 70%;">
+                <div class="row">
+                  <div class="col-12 col-sm-5 col-md-5 col-lg-12">
+                    <div id="img3" class="img">
+                      <img src="img/hotels/CityHotel.png" class="card-img-top img-fluid rounded-0 cardImg">
+                      <button onclick="showMap(3);" data-bs-toggle="modal" data-bs-target="#mapModal">See Map</button>
+                    </div>
+                  </div><!--img-->
+                  <div class="col-12 col-sm-7 col-md-7 col-lg-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Enter Tromsø City Hotel</h5>
+                      <p class="card-text sizedText change">The Enter City Hotel is a large hotel positioned right in the
+                        center of town,
+                        with over 46 rooms and apartments. It was recently remodelled and not has a fresh and modern
+                        feel.</p>
+
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <hr>
+                    <div class="accordion accordion-flush" id="accordionFlushExample2">
+                      <div class="accordion-item" style="background: transparent;">
+                        <h2 class="accordion-header" style="background: transparent;">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour" style="background: transparent;">Additional Information
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample2">
+                          <div class="accordion-body">
+                            <table>
+                              <tr>
+                                <td class="pointerCell"></td>
+                                <td>Grønnegata 48, 9008 Tromsø, Norway</td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                            <table>
+                              <tr>
+                                <td class="phoneCell"></td>
+                                <td>+47 77 78 10 50</td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                            <table>
+                              <tr>
+                                <td class="emailCell"></td>
+                                <td><a href="mailto:viking@entertromso.no">viking@entertromso.no</a></td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                            <table>
+                              <tr>
+                                <td class="webCell"></td>
+                                <td><a href="https://entertromso.no/hjem-2/"
+                                    target="_blank">https://entertromso.no/hjem-2/</a></td>
+                              </tr>
+                            </table>
+                            <hr class="interHr">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--body-->
+        <h2 class="pageSubH">Image Gallery</h2>
+        <!--carousel-->
+        <div class="row">
+          <div class="col-0 col-md-3"></div>
+          <div class="col-12 col-md-6">
+            <div class="carouselSizer">
+              <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                    aria-label="Slide 9"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+                    aria-label="Slide 10"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
+                    aria-label="Slide 11"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
+                    aria-label="Slide 12"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/hotelCarouselPics/hCarousel1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">The Tromsø lodge-houses under aurora borealis</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">A row of Tromsø Lodge lodge-cabins</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">A row of red lodge-cabins</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel4.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">The interior of a luxury cabin</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel5.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">The Scandic Ishavshotel in the evening</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel6.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">The interior of a Scandic room</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel7.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">The entrance to the Scandic Ishavshotel</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel8.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">The Scandic Ishavshotel in daylight</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel9.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">The interior of a City Hotel room</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel10.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">The front of Enter City Hotel</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel11.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">The entrance to Enter City Hotel</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hotelCarouselPics/hCarousel12.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                      <p class="carouselCap">The interior of a large City Hotel room</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-0 col-md-3"></div>
+        </div>
+        <!--carousel close-->
+      </div>
+      <div class="col-0 col-md-1 side"></div>
+
+    </div>
+    <!--content end-->
+  </div><!--container close DO NOT TOUCH-->
+  <footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!--search modal open-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
+          </div>
+          <div class="modal-body" style="height: 300px;">
+            <div id="pineBorder" style="top: -20px; transform: scaleY(.6);"></div>
+            <div style="height: 30px;"></div>
+            <!--list start-->
+            <ul id="myMenu">
+              <!--empty items-->
+              <li id="emptyItem">
+                <a style="font-weight: 900; color: transparent; user-select: none;">empty</a>
+              </li>
+              <li id="emptyItem">
+                <a style="font-weight: 900; color: transparent; user-select: none;">empty</a>
+              </li>
+              <li id="emptyItem">
+                <a style="font-weight: 900; color: transparent; user-select: none;">empty</a>
+              </li>
+              <!--core pages-->
+              <li><a href="index.html" class="noSub">Home</a></li>
+              <li><a href="hotels.html" class="noSub">Hotels</a></li>
+              <li><a href="restaurants.html" class="noSub">Restaurants</a></li>
+              <li><a href="things-to-do.html" class="noSub">Things to Do</a></li>
+              <li><a href="important-information.html" class="noSub">Important Information</a></li>
+              <!--main divs-->
+              <li><a href="index.html" class="noSub">History</a></li>
+
+              <li><a href="hotels.html#lodge" class="noSub">Tromsø Lodge</a></li>
+              <li><a href="hotels.html#scandic" class="noSub">Scandic Ishavshotel</a></li>
+              <li><a href="hotels.html#cityHotel" class="noSub">Tromsø City Hotel</a></li>
+              <li><a href="hotels.html" class="noSub">Rooms</a></li>
+              <li><a href="hotels.html" class="noSub">Stay</a></li>
+              <li><a href="hotels.html" class="noSub">Bed</a></li>
+
+              <li><a href="restaurants.html#hildr" class="noSub">Hildr</a></li>
+              <li><a href="restaurants.html#bardus" class="noSub">Bardus</a></li>
+              <li><a href="restaurants.html#cafe" class="noSub">Cafe Bistro</a></li>
+              <li><a href="restaurants.html" class="noSub">Eat</a></li>
+              <li><a href="restaurants.html" class="noSub">Drink</a></li>
+              <li><a href="restaurants.html" class="noSub">Bar</a></li>
+              <li><a href="restaurants.html" class="noSub">Food</a></li>
+
+              <li><a href="things-to-do.html#aurora" class="noSub">Aurora Borealis</a></li>
+              <li><a href="things-to-do.html#troll" class="noSub">Troll Museum</a></li>
+              <li><a href="things-to-do.html#fjord" class="noSub">Fjords</a></li>
+              <li><a href="things-to-do.html" class="noSub">Activities</a></li>
+              <li><a href="things-to-do.html" class="noSub">Excursions</a></li>
+              <li><a href="things-to-do.html" class="noSub">Sights</a></li>
+
+              <li><a href="important-information.html#airport" class="noSub">Airport</a></li>
+              <li><a href="important-information.html#transport" class="noSub">Transportation</a></li>
+              <li><a href="important-information.html#places" class="noSub">Places</a></li>
+              <li><a href="important-information.html#bigMap" class="noSub">All-Map</a></li>
+              <li><a href="important-information.html" class="noSub">Plane</a></li>
+              <li><a href="important-information.html" class="noSub">Car</a></li>
+              <!--specific search terms-->
+              <!--home-->
+              <li>
+                <a href="index.html">King Christian
+                  <span class="subText">Home /
+                    <span class="subBody">...in 1794 by
+                      <span class="main">King Christian VII</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--king christian-->
+              <li>
+                <a href="">World War II
+                  <span class="subText">Home /
+                    <span class="subBody">...During
+                      <span class="main">World War II</span>
+                      it served...
+                    </span>
+                  </span>
+                </a>
+              </li><!--ww2-->
+              <li>
+                <a href="index.html">Norwegian Government
+                  <span class="subText">Home /
+                    <span class="subBody">...seat of the
+                      <span class="main">Norwegian Government</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--nor. govt.-->
+              <li>
+                <a href="index.html">Aurora Borealis
+                  <span class="subText">Home /
+                    <span class="subBody">...see the
+                      <span class="main">aurora borealis</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--see aurora borealis-->
+              <!--hotels-->
+              <li>
+                <a href="hotels.html#scandic">Paris
+                  <span class="subText">Hotels /
+                    <span class="subBody">...the
+                      <span class="main">Paris</span>
+                      of the...
+                    </span>
+                  </span>
+                </a>
+              </li><!--paris-->
+              <li>
+                <a href="hotels.html#scandic">mountains
+                  <span class="subText">Hotels /
+                    <span class="subBody">...as the Norwegian
+                      <span class="main">mountains</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--mountains-->
+              <!--restaurants-->
+              <li>
+                <a href="restaurants.html#bardus">reflection
+                  <span class="subText">Restaurants /
+                    <span class="subBody">...a northern
+                      <span class="main">reflection</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--reflection-->
+              <li>
+                <a href="restaurants.html#bardus">reindeer
+                  <span class="subText">Restaurants /
+                    <span class="subBody">...moose,
+                      <span class="main">reindeer</span>
+                      , king...
+                    </span>
+                  </span>
+                </a>
+              </li><!--reindeer-->
+              <li>
+                <a href="restaurants.html#">reservation
+                  <span class="subText">Restaurants /
+                    <span class="subBody">...under
+                      <span class="main">reservation</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--reservation-->
+              <li>
+                <a href="restaurants.html#">local
+                  <span class="subText">Restaurants /
+                    <span class="subBody">...the
+                      <span class="main">local</span>
+                      ingredients...
+                    </span>
+                  </span>
+                </a>
+              </li><!--local-->
+              <li>
+                <a href="restaurants.html#">inspire
+                  <span class="subText">Restaurants /
+                    <span class="subBody">...surprise and
+                      <span class="main">inspire</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--inspire-->
+              <!--things to do-->
+              <li>
+                <a href="things-to-do.html#troll">City Center
+                  <span class="subText">Things to do /
+                    <span class="subBody">...from
+                      <span class="main">City Center</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--City Center-->
+              <li>
+                <a href="things-to-do.html#">fairy tales
+                  <span class="subText">Things to do /
+                    <span class="subBody">...Norse troll
+                      <span class="main">fairy tales</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--fairy tales-->
+              <li>
+                <a href="things-to-do.html#">virtual reality
+                  <span class="subText">Things to do /
+                    <span class="subBody">...and
+                      <span class="main">virtual reality</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--virtual reality-->
+              <li>
+                <a href="things-to-do.html#">Tromsøya
+                  <span class="subText">Things to do /
+                    <span class="subBody">...island of
+                      <span class="main">Tromsøya</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--Tromsoya-->
+              <li>
+                <a href="things-to-do.html#">Hungeren
+                  <span class="subText">Things to do /
+                    <span class="subBody">...away from
+                      <span class="main">Hungeren</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--Hungeren-->
+              <li>
+                <a href="things-to-do.html#">arctic circle
+                  <span class="subText">Things to do /
+                    <span class="subBody">...north of the
+                      <span class="main">arctic circle</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--Arctic Circle-->
+              <li>
+                <a href="things-to-do.html#">magic
+                  <span class="subText">Things to do /
+                    <span class="subBody">...the
+                      <span class="main">magic</span>
+                      of...
+                    </span>
+                  </span>
+                </a>
+              </li><!--magic-->
+              <!--important information-->
+              <li>
+                <a href="important-information.html#airport">Avinor
+                  <span class="subText">Important Information /
+                    <span class="subBody">...owned by
+                      <span class="main">Avinor</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--Avinor-->
+              <li>
+                <a href="important-information.html#airport">Lufthansa
+                  <span class="subText">Important Information /
+                    <span class="subBody">...including
+                      <span class="main">Lufthansa</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--Lufthansa-->
+              <li>
+                <a href="important-information.html#airport">Air France
+                  <span class="subText">Important Information /
+                    <span class="subBody">...Finnair
+                      <span class="main">Air France</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--Air France-->
+              <li>
+                <a href="important-information.html#airport">Finnair
+                  <span class="subText">Important Information /
+                    <span class="subBody">...Lufthansa
+                      <span class="main">Finnair</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--Finnair-->
+              <li>
+                <a href="important-information.html#airport">Austrian Airlines
+                  <span class="subText">Important Information /
+                    <span class="subBody">...and
+                      <span class="main">Austrian Airlines</span>
+                      ...
+                    </span>
+                  </span>
+                </a>
+              </li><!--Austrian Airlines-->
+              <li><a href="important-information.html#transport" class="noSub">Tromsø Taxi</a></li><!--Tromso Taxi-->
+              <li><a href="important-information.html#transport" class="noSub">Buses</a></li><!--Buses-->
+              <li><a href="important-information.html#transport" class="noSub">Trains</a></li><!--Trains-->
+            </ul>
+            <!--list end-->
+          </div>
+          <div class="modal-footer border border-0">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--search modal close-->
+    
+    <!--map modal-->
+    <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="modalContent">
+
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

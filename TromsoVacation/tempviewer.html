@@ -1,0 +1,296 @@
+<!--search modal open-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-0">
+      <div class="modal-header">
+        <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
+      </div>
+      <div class="modal-body" style="height: 300px;">
+        <div id="pineBorder" style="top: -20px; transform: scaleY(.6);"></div>
+        <div style="height: 30px;"></div>
+        <!--list start-->
+        <ul id="myMenu">
+          <!--empty items-->
+          <li id="emptyItem">
+            <a style="font-weight: 900; color: transparent; user-select: none;">empty</a>
+          </li>
+          <li id="emptyItem">
+            <a style="font-weight: 900; color: transparent; user-select: none;">empty</a>
+          </li>
+          <li id="emptyItem">
+            <a style="font-weight: 900; color: transparent; user-select: none;">empty</a>
+          </li>
+          <!--core pages-->
+          <li><a href="index.html" class="noSub">Home</a></li>
+          <li><a href="hotels.html" class="noSub">Hotels</a></li>
+          <li><a href="restaurants.html" class="noSub">Restaurants</a></li>
+          <li><a href="things-to-do.html" class="noSub">Things to Do</a></li>
+          <li><a href="important-information.html" class="noSub">Important Information</a></li>
+          <!--main divs-->
+          <li><a href="index.html" class="noSub">History</a></li>
+
+          <li><a href="hotels.html#lodge" class="noSub">Tromso Lodge</a></li>
+          <li><a href="hotels.html#scandic" class="noSub">Scandic Ishavshotel</a></li>
+          <li><a href="hotels.html#cityHotel" class="noSub">Tromso City Hotel</a></li>
+
+          <li><a href="restaurants.html#hildr" class="noSub">Hildr</a></li>
+          <li><a href="restaurants.html#bardus" class="noSub">Bardus</a></li>
+          <li><a href="restaurants.html#cafe" class="noSub">Cafe Bistro</a></li>
+
+          <li><a href="things-to-do.html#aurora" class="noSub">Aurora Borealis</a></li>
+          <li><a href="things-to-do.html#troll" class="noSub">Troll Museum</a></li>
+          <li><a href="things-to-do.html#fjord" class="noSub">Fjords</a></li>
+
+          <li><a href="important-information.html#airport" class="noSub">Airport</a></li>
+          <li><a href="important-information.html#transport" class="noSub">Transporation</a></li>
+          <li><a href="important-information.html#places" class="noSub">Places</a></li>
+          <li><a href="important-information.html#bigMap" class="noSub">All-Map</a></li>
+          <!--specific search terms-->
+          <!--home-->
+          <li>
+            <a href="index.html">King Christian
+              <span class="subText">Home /
+                <span class="subBody">...in 1794 by
+                  <span class="main">King Christian VII</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--king christian-->
+          <li>
+            <a href="">World War II
+              <span class="subText">Home /
+                <span class="subBody"> During
+                  <span class="main">World War II</span>
+                  it served...
+                </span>
+              </span>
+            </a>
+          </li><!--ww2-->
+          <li>
+            <a href="index.html">Norwegian Government
+              <span class="subText">Home /
+                <span class="subBody">seat of the
+                  <span class="main">Norwegian Government</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--nor. govt.-->
+          <li>
+            <a href="index.html">Aurora Borealis
+              <span class="subText">Home /
+                <span class="subBody">see the
+                  <span class="main">aurora borealis</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--see aurora borealis-->
+          <!--hotels-->
+          <li>
+            <a href="hotels.html#scandic">Paris
+              <span class="subText">Hotels/
+                <span class="subBody">the
+                  <span class="main">Paris</span>
+                  of the...
+                </span>
+              </span>
+            </a>
+          </li><!--paris-->
+          <li>
+            <a href="hotels.html#scandic">mountains
+              <span class="subText">Hotels/
+                <span class="subBody">as the Norwegian
+                  <span class="main">mountains</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--mountains-->
+          <!--restaurants-->
+          <li>
+            <a href="restaurants.html#bardus">reflection
+              <span class="subText">Restaurants/
+                <span class="subBody">a northern
+                  <span class="main">reflection</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--reflection-->
+          <li>
+            <a href="restaurants.html#bardus">reindeer
+              <span class="subText">Restaurants/
+                <span class="subBody">moose,
+                  <span class="main">reindeer</span>
+                  , king...
+                </span>
+              </span>
+            </a>
+          </li><!--reindeer-->
+          <li>
+            <a href="restaurants.html#">reservation
+              <span class="subText">Restaurants/
+                <span class="subBody">under
+                  <span class="main">reservation</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--reservation-->
+          <li>
+            <a href="restaurants.html#">local
+              <span class="subText">Restaurants/
+                <span class="subBody">the
+                  <span class="main">local</span>
+                  ingredients...
+                </span>
+              </span>
+            </a>
+          </li><!--local-->
+          <li>
+            <a href="restaurants.html#">inspire
+              <span class="subText">Restaurants/
+                <span class="subBody">surprise and
+                  <span class="main">inspire</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--inspire-->
+          <!--things to do-->
+          <li>
+            <a href="things-to-do.html#troll">City Center
+              <span class="subText">Things to do/
+                <span class="subBody">from
+                  <span class="main">City Center</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--City Center-->
+          <li>
+            <a href="things-to-do.html#">fairy tales
+              <span class="subText">Things to do/
+                <span class="subBody">Norse troll
+                  <span class="main">fairy tales</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--fairy tales-->
+          <li>
+            <a href="things-to-do.html#">virtual reality
+              <span class="subText">Things to do/
+                <span class="subBody">and
+                  <span class="main">virtual reality</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--virtual reality-->
+          <li>
+            <a href="things-to-do.html#">Tromsøya
+              <span class="subText">Things to do/
+                <span class="subBody">island of
+                  <span class="main">Tromsøya</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--Tromsoya-->
+          <li>
+            <a href="things-to-do.html#">Hungeren
+              <span class="subText">Things to do/
+                <span class="subBody">away from
+                  <span class="main">Hungeren</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--Hungeren-->
+          <li>
+            <a href="things-to-do.html#">arctic circle
+              <span class="subText">Things to do/
+                <span class="subBody">north of the
+                  <span class="main">arctic circle</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--Arctic Circle-->
+          <li>
+            <a href="things-to-do.html#">magic
+              <span class="subText">Things to do/
+                <span class="subBody">the
+                  <span class="main">magic</span>
+                  of...
+                </span>
+              </span>
+            </a>
+          </li><!--magic-->
+          <!--important information-->
+          <li>
+            <a href="important-information.html#airport">Avinor
+              <span class="subText">Important Information/
+                <span class="subBody">owned by
+                  <span class="main">Avinor</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--Avinor-->
+          <li>
+            <a href="important-information.html#airport">Lufthansa
+              <span class="subText">Important Information/
+                <span class="subBody">including
+                  <span class="main">Lufthansa</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--Lufthansa-->
+          <li>
+            <a href="important-information.html#airport">Air France
+              <span class="subText">Important Information/
+                <span class="subBody">Finnair
+                  <span class="main">Air France</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--Air France-->
+          <li>
+            <a href="important-information.html#airport">Finnair
+              <span class="subText">Important Information/
+                <span class="subBody">Lufthansa
+                  <span class="main">Finnair</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--Finnair-->
+          <li>
+            <a href="important-information.html#airport">Austrian Airlines
+              <span class="subText">Important Information/
+                <span class="subBody">and
+                  <span class="main">Austrian Airlines</span>
+                  ...
+                </span>
+              </span>
+            </a>
+          </li><!--Austrian Airlines-->
+          <li><a href="important-information.html#transport" class="noSub">Tromsø Taxi</a></li><!--Tromso Taxi-->
+          <li><a href="important-information.html#transport" class="noSub">Buses</a></li><!--Buses-->
+          <li><a href="important-information.html#transport" class="noSub">Trains</a></li><!--Trains-->
+        </ul>
+        <!--list end-->
+      </div>
+      <div class="modal-footer border border-0">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--search modal close-->

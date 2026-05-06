@@ -1,0 +1,17 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade backgroundCarousel" data-bs-ride="carousel"
+  data-bs-touch="false" data-bs-pause="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="backCarousel/street.jpg" class="d-block w-100 jumbo-image">
+    </div>
+    <div class="carousel-item">
+      <img src="backCarousel/lighthouseBeam2_upresed_BW.png" class="d-block w-100 jumbo-image">
+    </div>
+    <div class="carousel-item">
+      <img src="backCarousel/downStairs.avif" class="d-block w-100 jumbo-image">
+    </div>
+    <div class="carousel-item">
+      <img src="backCarousel/lighthouseOfGenoa.png" class="d-block w-100 jumbo-image">
+    </div>
+  </div>
+</div>

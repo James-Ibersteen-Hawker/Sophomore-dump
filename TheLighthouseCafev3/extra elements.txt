@@ -1,0 +1,57 @@
+<!--nav-->
+
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand navLogo" href="index.html">The Lighthouse</a>
+    <button class="navbar-toggler me-0 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto navLeft">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Breakfast</a></li>
+            <li><a class="dropdown-item" href="#">Lunch</a></li>
+            <li><a class="dropdown-item" href="#">Coffee and Bakery</a></li>
+            <li><a class="dropdown-item" href="#">Menu PDF + Specials</a></li>
+          </ul>
+        </li>
+        <li class="nav-item left">
+          <a class="nav-link" href="hours.html">Hours</a>
+        </li>
+      </ul>
+    </div>
+    <ul class="navbar-nav me-auto ms-auto centerLogo">
+      <li class="nav-item mainLogo" onclick="linker('linker', '')"><img src="Lighthouse Logo PNG.png"></li>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto navRight">
+        <li class="nav-item right">
+          <a class="nav-link" href="location.html">Location</a>
+        </li>
+        <li class="nav-item right" style="white-space: nowrap;">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--nav-->
+
+<!--css dropdown-->
+<div class="dropContainer">
+  <a class="nav-link dropButton" href="#">Menu</a>
+  <div class="dropList">
+    <a href="#">Breakfast</a>
+    <a href="#">Lunch</a>
+    <a href="#">Coffee + Bakery</a>
+    <a href="#">Menu + Specials</a>
+  </div>
+</div>

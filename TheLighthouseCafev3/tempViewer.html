@@ -1,0 +1,168 @@
+<div class="aboveNav" id="aboveNav" onclick="stopAudio()"><img src="Lighthouse Logo PNG.png" class="me-auto ms-auto" onload="setAboveNav()" id="aboveImg"></div>
+<nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand hideLogo" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="nav-link hinge"><img src="hinge.png" id="hinge1"></a>
+    <div class="collapse navbar-collapse" id="navbarDropdown">
+      <div class="navbar-nav me-auto ms-auto">
+        <a class="nav-link homeLink" href="index.html">Home</a>
+        <div class="nav-link dropdown">
+          <a class="dropdown-toggle text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="breakfast.html">Breakfast</a></li>
+            <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+            <li><a class="dropdown-item" href="coffee+bakery.html">Coffee + Bakery</a></li>
+            <li><a class="dropdown-item" href="menu+specials.html">Menu + Specials</a></li>
+          </ul>
+        </div>
+        <a class="nav-link" href="hours.html">Hours</a>
+        <a class="nav-link" href="location.html">Location</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
+        <a class="nav-link" href="bookstore.html">Bookstore</a>
+      </div>
+    </div>
+    <a class="nav-link hinge"><img src="hinge.png" id="hinge2"></a>
+  </div>
+</nav>
+
+<!--footer-->
+<footer>
+  <div class="lighthouse houseRight"></div>
+  <div class="lighthouse houseLeft"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h3>The Lighthouse</h3>
+        <h6>Piazza S. Lorenzo, 63, 16123 Genoa GE, Italy</h6>
+        <hr class="whiteHr">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-0 col-sm-1"></div>
+      <div class="col-12 col-sm-5" style="margin-bottom: 5px;">
+        <h6>Were on Social Media!</h6>
+        <div class="row">
+          <div class="col-12 socialRow"><img src="socials/facebook.png" alt="Facebook" class="social"
+              onclick="linker('https://www.facebook.com/_blank')">
+            <img src="socials/instagram.webp" alt="Instagram" class="social"
+              onclick="linker('https://www.instagram.com/_blank')">
+          </div>
+        </div>
+        <hr class="whiteHr">
+      </div>
+      <div class="col-12 col-sm-5 reserveRow">
+        <h6>Make a reservation</h6>
+        <div class="row reservationRow">
+          <div class="col-12 col-md-6 footInputRow">
+            <input type="text" class="footerInput" placeholder="First Name*">
+          </div>
+          <div class="col-12 col-md-6 footInputRow">
+            <input type="text" class="footerInput" placeholder="Last Name*">
+          </div>
+          <div class="col-12 footInputRow">
+            <input type="text" class="footerInput" placeholder="email@address.com*">
+          </div>
+          <div class="col-12 footInputRow">
+            <input type="text" class="footerInput" placeholder="Phone Number*">
+          </div>
+          <div class="col-4 col-sm-5">
+            <div class="dropup">
+              <a class="btn dropdownBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="row">
+                  <div class="col-8 col-md-9" id="dropBtn">Times</div>
+                  <div class="col-4 col-md-3 dropdown-toggle"></div>
+                </div>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <h6 class="dropdown-header" style="pointer-events: none;">Time</h6>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" onclick="setDropText('1:00')" id="1:00">1:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('2:00')" id="2:00">2:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('3:00')" id="3:00">3:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('4:00')" id="4:00">4:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('5:00')" id="5:00">5:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('6:00')" id="6:00">6:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('7:00')" id="7:00">7:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('8:00')" id="8:00">8:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('9:00')" id="9:00">9:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('10:00')" id="10:00">10:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('11:00')" id="11:00">11:00</a></li>
+                <li><a class="dropdown-item" onclick="setDropText('12:00')" id="12:00">12:00</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <input type="date" id="dateInput">
+          </div>
+          <div class="col-4 col-sm-3">
+            <div class="row" id="incrementRow">
+              <div class="col-10" id="incrementer"></div>
+              <div class="col-2 arrows" style="height: 100%;">
+                <div class="row">
+                  <div class="col-12 carets" onclick="increment('add')">
+                    &#9650;
+                  </div>
+                  <div class="col-12 carets" onclick="increment('subtract')">
+                    &#9660;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="reserveBtn" onclick="reserver()">Reserve</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-0 col-sm-1"></div>
+    </div>
+  </div>
+  <div class="w-100">Copyright &#169; 2024 The Lighthouse</div>
+</footer>
+
+<!--settings-->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#settings">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="settings" tabindex="-1" aria-labelledby="settingsLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="settingsLabel">Modal title</h1>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h2>Music Settings</h2>
+            <hr>
+            <input type="radio" id="start" name="music">
+            <label for="start">Start</label>
+            <input type="radio" id="stop" name="music">
+            <label for="stop">Stop</label>
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--tromso modal-->
+<div class="modal fade settingsModal" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h1 class="modal-title settingsH" id="settingsModalLabel">Settings</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><div class="row"><div class="col-6 col-sm-3"><h2>Snow</h2><table class="alertTable"><tr><td><label class="switch"><input type="checkbox"><span class="slider round"></span></label></td><td class="textTd"><div class="editDiv">Toggle Snow</div></td></tr></table></div><div class="col-6 col-sm-3"><h2>Units</h2><table><tr><td><input type="radio" class="unitsButton" name="unit" value="imperial" onclick="changeUnit('imperial')"></td><td class="textTd">Imperial</td></tr><tr><td><input type="radio" class="unitsButton" name="unit" value="metric" onclick="changeUnit('metric')"></td><td class="textTd">Metric</td></tr></table></div><div class="col-6 col-sm-3"><h2>Storage</h2><a class="wiper">Clear Local</a><br><a class="wiper">Clear Session</a></div></div></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save Changes</button><button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="display: none;">Close</button></div></div></div></div>

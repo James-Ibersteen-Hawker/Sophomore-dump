@@ -1,0 +1,67 @@
+------------HOTELS------------
+
+#1: Tromso Lodge & Camping
+
+iframe: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11763.556399920788!2d18.99729181805373!3d69.64326596624743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45c4c4e382e8632b%3A0x186f18c65bbac4cf!2sTromso%20Camping!5e0!3m2!1sen!2sus!4v1710194213610!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+link to: 
+https://www.tripadvisor.com/Hotel_Review-g190475-d1379737-Reviews-Tromso_Lodge_Camping-Tromso_Troms_Northern_Norway.html
+
+https://tromsolodgeandcamping.no/
+
+---
+
+#2: Scandic Ishavshotel
+
+iframe: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.5074510565166!2d18.959368077911794!3d69.6495061466767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45c4c452de42927b%3A0x62660f274082faa9!2sScandic%20Ishavshotel!5e0!3m2!1sen!2sus!4v1710194507992!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+link to: 
+https://www.tripadvisor.com/Hotel_Review-g190475-d231453-Reviews-Scandic_Ishavshotel-Tromso_Troms_Northern_Norway.html
+
+https://www.scandichotels.com/hotels/norway/tromso/scandic-ishavshotel?utm_campaign=gmb&utm_source=google&utm_medium=organic&utm_content=ishavshotel&_gl=1*xep2kx*_ga*MTk2NDE5MTA5OC4xNzEwMTk0NDQy*_ga_1MJCCJYC3Z*MTcxMDE5NDQ0MS4xLjAuMTcxMDE5NDQ0MS4wLjAuMA..*_fplc*WmxWdCUyRk9yajg0bU5TTUxKcFFwYzRsODJuJTJGckUlMkJkYlFhUWQ0UXJYUXFaU2VhS2R5VUg1Ulg0UFlwUmk3YXNwVlV5aVB2RGJ3S1hIYUhhaDNER1B3UWh4enVRNW1vNG83YmV2THViQWVFbzhHRHhIMHQzQVFKRll3SmpNZnlRJTNEJTNE*_ga_SYJ3HGVZKX*MTcxMDE5NDQ0Mi4xLjAuMTcxMDE5NDQ0Mi4wLjAuMA..
+---
+
+#3: Enter Tromsø City Hotel
+
+iframe: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.5855364116803!2d18.950070377911665!3d69.64831014678069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45c4c5ad21e36851%3A0x9df980b4b93e2051!2sEnter%20City%20Hotel!5e0!3m2!1sen!2sus!4v1710194662101!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+link to: 
+https://www.tripadvisor.com/Hotel_Review-g190475-d1230601-Reviews-Enter_Tromso_City_Hotel-Tromso_Troms_Northern_Norway.html?spAttributionToken=MjE5ODM4NzU
+
+https://entertromso.no/hjem-2/
+
+------------RESTAURANTS------------
+
+#1: Bardus Bistro & Bar
+
+iframe: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.4403076138576!2d18.95308537791183!3d69.65053454658717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45c4c452d8436687%3A0x53751f72f0c12ce4!2sBardus%20Bistro!5e0!3m2!1sen!2sus!4v1710195388072!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+link to: 
+https://www.tripadvisor.com/Restaurant_Review-g190475-d4931804-Reviews-Bardus_Bistro_Bar-Tromso_Troms_Northern_Norway.html
+
+https://www.bardus.no/
+---
+
+#2: Hildr Restaurant
+
+iframe: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.2801543593305!2d18.96198710000001!3d69.6529875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45c4c453bc8b1507%3A0xf51bf531a3d884f3!2sHildr%20Gastro%20Bar!5e0!3m2!1sen!2sus!4v1710195461286!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+link to: 
+https://www.tripadvisor.com/Restaurant_Review-g190475-d7983870-Reviews-Hildr_Restaurant-Tromso_Troms_Northern_Norway.html
+
+https://www.hildr.no/
+---
+
+#3: Art Café Bistro
+
+iframe: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.604803031312!2d18.955408777911618!3d69.64801504680645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45c4c5acbe8fed21%3A0x8cc74fa7895c2c29!2sArt%20Caf%C3%A9%20Bistro!5e0!3m2!1sen!2sus!4v1710195522759!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+link to:
+https://www.tripadvisor.com/Restaurant_Review-g190475-d9608010-Reviews-Art_Cafe_Bistro-Tromso_Troms_Northern_Norway.html
+
+no other link
+
+
+
+
+to copy: Tromsø
