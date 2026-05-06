@@ -1,0 +1,76 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url("spookybackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+h1 {
+  font-family: "banshee-std", cursive;
+  font-size: 50px;
+  font-weight: 100;
+  font-style: normal;
+  color: #ff0000;
+  text-shadow: 2px 2px 10px #b7018f;
+   }
+h2 {
+  font-family: "banshee-std", cursive;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: normal;
+  color: #580000;
+  text-shadow: 2px 2px 10px #ffffff;
+   }
+h2.a {
+  font-family: "banshee-std", cursive;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: normal;
+  opacity: 50%;
+  color: #ff0000;
+  text-shadow: 2px 2px 10px #ffffff;
+   }
+h2.a:hover {
+  opacity: 100%;
+  color: #0400db;
+  text-shadow: 2px 2px 10px #ff0000;
+   }
+hr {
+  margin: 0px 20px;
+  height: 3px;
+  border: none;
+  border-radius: 2px;
+  background: #ffffff;
+}
+a {
+  text-decoration: none;
+  color: #ff0000;
+}
+table {
+  margin-right: auto;
+  margin-left: auto;
+}
+td {
+  width: 200px;
+}
+div.b {
+  font-family: "true-gore", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ff0000;
+}
+@keyframes dracula {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+div.animate {
+  margin-right: auto;
+  margin-left: auto;
+  animation-name: dracula;
+  animation-duration: 4s;
+}

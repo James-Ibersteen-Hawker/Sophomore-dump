@@ -1,0 +1,81 @@
+#showtable {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  border-spacing: 2vw;
+}
+
+.showcell1 {
+  background: linear-gradient(rgba(0, 2, 0, .2), #920000), url(webpic.png);
+  filter: grayscale(50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 33%;
+  aspect-ratio: 1/1;
+  border: 5px solid #920000;
+  box-shadow: 0px 0px 10px #920000;
+  overflow: clip;
+  vertical-align: middle;
+}
+
+.showcell2 {
+  background: linear-gradient(rgba(0, 2, 0, .2), #920000), url(windmillsun.png);
+  filter: grayscale(50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 33%;
+  aspect-ratio: 1/1;
+  border: 5px solid #920000;
+  box-shadow: 0px 0px 20px #920000;
+  overflow: clip;
+}
+
+.showcell3 {
+  background: linear-gradient(rgba(0, 2, 0, .2), #920000), url(factorytunnel.png);
+  filter: grayscale(50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 33%;
+  aspect-ratio: 1/1;
+  border: 5px solid #920000;
+  box-shadow: 0px 0px 20px #920000;
+  overflow: clip;
+}
+
+.tablepicselect {
+  opacity: 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  box-shadow: 0px 0px 20px #920000;
+  filter: grayscale(50%);
+}
+
+.caption {
+  background: linear-gradient(rgba(126, 126, 126, 0.3), #3b3b3b);
+  opacity: 0;
+  font-family: 'roboto slab', serif;
+  font-weight: 100;
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 48%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: opacity 0.5s;
+}
+
+.caption:hover {
+  opacity: 1;
+}
+
+a {
+  color: white;
+}

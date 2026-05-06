@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+    background-color: rgb(69, 69, 69);
+    border-top: 2px solid black;
+  }
+
+  .footerContents {
+    font-family: 'roboto slab', serif;
+  }
+
+  .up-caret {
+    text-align: center;
+    border-bottom: 2px solid gray;
+    transition-duration: 0.2s;
+    height: 25px;
+  }
+
+  .up-caret:hover {
+    background: rgb(54, 54, 54);
+    transition-duration: 0.2s;
+  }
+
+  #footMenu {
+    background: black;
+  }
+
+  #footMenu a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #footMenu hr {
+    height: 2px;
+    border: none;
+    background-color: gray;
+    border-radius: 100px;
+  }
+
+  #footMenu p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+
+  button {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .columnFoot a {
+    color: white;
+    border-bottom: 1px solid gray;
+    transition-duration: 0.2s;
+  }

@@ -1,0 +1,222 @@
+.flowerset {
+  position: absolute;
+  width: 50%;
+  height: 320px;
+  margin-left: 40px;
+  margin-right: 1px;
+  top: 50px;
+  left: 5px;
+  right: 1px;
+}
+
+.flowerset div {
+  position: absolute;
+  display: block;
+}
+
+.flowerset div:nth-child(1) {
+  left: 20%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7s;
+}
+
+.flowerset div:nth-child(2) {
+  left: 50%;
+  animation: animate 20s linear infinite;
+  animation-delay: -5s;
+}
+
+.flowerset div:nth-child(3) {
+  left: 70%;
+  animation: animate 20s linear infinite;
+  animation-delay: 0s;
+}
+
+.flowerset div:nth-child(4) {
+  left: 0%;
+  animation: animate 15s linear infinite;
+  animation-delay: -5s;
+}
+
+.flowerset div:nth-child(5) {
+  left: 85%;
+  animation: animate 18s linear infinite;
+  animation-delay: -10s;
+}
+
+.flowerset div:nth-child(6) {
+  left: 0;
+  animation: animate 12s linear infinite;
+}
+
+.flowerset div:nth-child(7) {
+  left: 15%;
+  animation: animate 14s linear infinite;
+}
+
+.flowerset div:nth-child(8) {
+  left: 60%;
+  animation: animate 15s linear infinite;
+}
+
+.flowerset2 {
+  position: absolute;
+  width: 43%;
+  height: 320px;
+  margin-left: 40px;
+  margin-right: 1px;
+  top: 50px;
+  left: 0;
+}
+
+.flowerset2 div {
+  position: absolute;
+  display: block;
+}
+
+.flowerset2 div:nth-child(3) {
+  left: 20%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7s;
+}
+
+.flowerset2 div:nth-child(8) {
+  left: 50%;
+  animation: animate 20s linear infinite;
+  animation-delay: -10s;
+}
+
+.flowerset2 div:nth-child(6) {
+  left: 70%;
+  animation: animate 20s linear infinite;
+  animation-delay: -5s;
+}
+
+.flowerset2 div:nth-child(4) {
+  left: 0%;
+  animation: animate 15s linear infinite;
+  animation-delay: -10s;
+}
+
+.flowerset2 div:nth-child(2) {
+  left: 85%;
+  animation: animate 18s linear infinite;
+  animation-delay: -15s;
+}
+
+.flowerset2 div:nth-child(5) {
+  left: 0;
+  animation: animate 12s linear infinite;
+}
+
+.flowerset2 div:nth-child(1) {
+  left: 15%;
+  animation: animate 14s linear infinite;
+}
+
+.flowerset2 div:nth-child(7) {
+  left: 60%;
+  animation: animate 15s linear infinite;
+}
+
+.flowerset3 {
+  position: absolute;
+  width: 43%;
+  height: 320px;
+  margin-left: 40px;
+  margin-right: 1px;
+  top: 50px;
+  left: 0;
+}
+
+.flowerset3 div {
+  position: absolute;
+  display: block;
+}
+
+.flowerset3 div:nth-child(8) {
+  left: 20%;
+  animation: animate 15s linear infinite;
+  animation-delay: -15s;
+}
+
+.flowerset3 div:nth-child(7) {
+  left: 50%;
+  animation: animate 20s linear infinite;
+  animation-delay: -13s;
+}
+
+.flowerset3 div:nth-child(6) {
+  left: 70%;
+  animation: animate 20s linear infinite;
+  animation-delay: -8s;
+}
+
+.flowerset3 div:nth-child(5) {
+  left: 0%;
+  animation: animate 15s linear infinite;
+  animation-delay: -13s;
+}
+
+.flowerset3 div:nth-child(4) {
+  left: 85%;
+  animation: animate 18s linear infinite;
+  animation-delay: -18s;
+}
+
+.flowerset3 div:nth-child(3) {
+  left: 0;
+  animation: animate 12s linear infinite;
+}
+
+.flowerset3 div:nth-child(2) {
+  left: 15%;
+  animation: animate 14s linear infinite;
+}
+
+.flowerset3 div:nth-child(1) {
+  left: 60%;
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    top: -10%;
+    transform: translateX(20px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+
+  20% {
+    transform: translateX(-20px) rotate(45deg);
+  }
+
+  40% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+
+  60% {
+    transform: translateX(20px) rotate(180deg);
+  }
+
+  80% {
+    transform: translateX(-20px) rotate(180deg);
+  }
+
+  100% {
+    top: 110%;
+    transform: translateX(-20px) rotate(225deg);
+  }
+}
+
+.flowerset2 img {
+  transform: scale(2) rotateY(180deg);
+  filter: blur(2px);
+}
+
+.flowerset3 img {
+  transform: scale(0.8) rotateX(180deg);
+  filter: blur(4px);
+}

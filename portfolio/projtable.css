@@ -1,0 +1,95 @@
+#projtab {
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 2vw;
+}
+
+#projtab td {
+  background: #3d3d3d;
+  width: 30%;
+  height: auto;
+  box-shadow: 4px 4px 10px #920000;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'medieval', serif;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+#projtab embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: clip;
+  border-bottom: 2px solid #920000;
+  border-top: 2px solid #920000;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: -5px;
+  font-family: 'medieval', serif;
+  font-size: 20px;
+  font-weight: 100;
+  height: 40px;
+  border: 4px outset #920000;
+  border-radius: 5px;
+  color: #3d3d3d;
+  background-color: #d6d6d6;
+}
+
+button:hover {
+  box-shadow: 0px 0px 10px #920000;
+}
+
+button:active {
+  border: 4px inset #d6d6d6;
+  border-radius: 5px;
+  color: #c4c4c4;
+  background-color: #920000;
+}
+
+/* imgtab */
+
+#imgtab {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 2vw;
+}
+
+#imgtab td {
+  background: #3d3d3d;
+  width: 20%;
+  height: auto;
+  box-shadow: 4px 4px 10px #920000;
+  text-align: center;
+}
+
+#imgtab img {
+  width: 100%;
+  border-bottom: 3px solid #920000;
+}
+
+p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+td p {
+  height: 100px;
+  overflow-y: scroll;
+  overflow-x: clip;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+td p::-webkit-scrollbar {
+  display: none;
+}

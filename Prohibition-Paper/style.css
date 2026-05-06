@@ -1,0 +1,141 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url(paperBG.jpg);
+  background-size: contain;
+  color: black;
+  line-height: 1.1;
+}
+
+@font-face {
+  font-family: Chomsky;
+  src: url(Chomsky.otf);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.tabHeader {
+  height: 30px;
+  text-align: center;
+}
+
+.topButton {
+  height: 30px;
+  font-family: 'Chomsky', serif;
+  font-size: 20px;
+}
+
+.topButton:hover {
+  box-shadow: inset 0px 0px 5px white;
+  transition-duration: 0.1s;
+}
+
+.topButton:active {
+  box-shadow: inset 0px 0px 10px white;
+  transition-duration: 0.1s;
+}
+
+.curtainBubble {
+  height: 60px;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  font-family: 'Chomsky', serif;
+  font-size: 35px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.curtainBubble:hover {
+  box-shadow: inset 0px 0px 5px black;
+  transition-duration: 0.1s;
+}
+
+.curtainBubble:active {
+  box-shadow: inset 0px 0px 10px black;
+  transition-duration: 0.1s;
+}
+
+.spacer {
+  height: 90px;
+}
+
+.pageHeader {
+  font-family: 'Chomsky', serif;
+  text-align: center;
+}
+
+.headerHR {
+  height: 0.1rem;
+  background: black;
+}
+
+.lion {
+  height: 5vw;
+}
+
+.lionLeft {
+  transform: none;
+  margin-right: 5px;
+}
+
+.lionRight {
+  transform: scaleX(-1);
+  margin-left: 5px;
+}
+
+
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  text-align: justify;
+  hyphens: auto;
+  font-family: 'Special Elite', system-ui;
+}
+
+.imageContainer {
+  float: right;
+  width: 35%;
+  margin-top: 5px;
+  margin: 10px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+h2 {
+  font-family: 'Anton', sans-serif;
+  text-align: right;
+}
+
+.worksCited {
+  padding-left: 36px;
+  font-family: 'IM Fell English SC', serif;
+  text-indent: -36px;
+}
+
+.worksCited p {
+  text-align: left;
+}
+
+.worksCited a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+}

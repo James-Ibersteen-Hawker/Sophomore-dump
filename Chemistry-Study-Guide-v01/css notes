@@ -1,0 +1,57 @@
+/* column */
+
+.firstBox {
+  top: 100px;
+}
+
+.secondBox {
+  top: 245px;
+}
+
+/* column */
+
+.thirdBox {
+  top: 100px;
+  left: 145px;
+}
+
+.fourthBox {
+  top: 245px;
+  left: 145px;
+}
+
+/* column */
+
+.fifthBox {
+  top: 100px;
+  left: 290px;
+}
+
+.sixthBox {
+  top: 245px;
+  left: 290px;
+}
+
+/* column */
+
+.seventhBox {
+  top: 100px;
+  left: 435px;
+}
+
+.eighthBox {
+  top: 245px;
+  left: 435px;
+}
+
+/* column */
+
+.ninthBox {
+  top: 100px;
+  left: 580px;
+}
+
+.tenthBox {
+  top: 245px;
+  left: 580px;
+}

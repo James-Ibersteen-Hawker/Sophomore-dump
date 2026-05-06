@@ -1,0 +1,191 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  background: linear-gradient(#3d3d3d, #000);
+  background-attachment: fixed;
+  color: white;
+  overflow: clip;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+@font-face {
+  font-family: medieval;
+  src: url(Chomsky.otf);
+}
+
+::selection {
+  background: rgba(146, 0, 0, 0.4);
+  color: #bababa;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8f0000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136,0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.5);
+}
+
+/* nav */
+
+#rsa {
+  padding-top: 2px;
+  text-align: center;
+  width: 80px;
+}
+
+#rs {
+  height: 60px;
+}
+
+/* body */
+
+a {
+  text-decoration: none;
+}
+
+section {
+  position: absolute;
+  top: 40px;
+  margin-top: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  height: 100vh;
+  width: 98vw;
+  overflow-y: scroll;
+  overflow-x: clip;
+  text-align: center;
+}
+
+/* section::-webkit-scrollbar {
+  width: 20px;
+}
+
+section::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+section::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+}
+
+section::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0);
+} */
+
+h1 {
+  font-family: 'medieval', serif;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: -5px;
+  color: #8a8a8a;
+  text-shadow: 0px 0px 5px #920000;
+  transition: color 0.2s, text-shadow 0.2s;
+  animation-name: headLight;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+h2 {
+  font-family: 'medieval', serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.headingpic {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  filter: brightness(200%) drop-shadow(0 0 2px #920000);
+  animation-name: headLight;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes headLight {
+  from {
+    color: #8a8a8a;
+    text-shadow: 0px 0px 5px #920000;
+    opacity: 0;
+  }
+  to {
+    color: #dbdbdb;
+    text-shadow: 0px 0px 5px #cc0000;
+    opacity: 1;
+  }
+}
+
+.swordhr {
+  width: 96vw;
+  filter: brightness(130%);
+}
+
+img {
+  pointer-events: none;
+}
+
+#linktable {
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+#linktable td {
+  text-align: center;
+  width: 50%;
+}
+
+#linktable td a {
+  font-family: 'medieval', serif;
+  font-weight: 100;
+  font-size: 40px;
+  text-shadow: none;
+  transition: text-shadow 0.2s;
+}
+
+#linktable td a:hover {
+   text-shadow: 0 0 25px #920000, 0 0 25px #920000, 0 0 25px #920000;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #4a4a4a;
+  z-index: 5;
+}
+
+footer a {
+  color: white;
+}
+
+footer td {
+  text-align: center;
+}

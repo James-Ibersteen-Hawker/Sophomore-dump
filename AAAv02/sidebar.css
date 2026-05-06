@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.offcanvas h1 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .offcanvas hr {
+    margin: 0;
+  }
+
+  .letters-menu {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: default;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: #242424;
+    cursor: pointer;
+    transition-duration: 0.2s;
+  }
+
+  .menu-link:hover {
+    color: #838383;
+    transition-duration: 0.2s;
+  }
+
+  .alphabetList {
+    list-style-type: none;
+  }
+
+  .alphabetList ul {
+    list-style-type: '- ';
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+  }
+
+  .alphabetList ul a {
+    text-decoration: none;
+    color: #242424;
+  }
+
+  .alphabetList ul a:nth-child(3) {
+    list-style-type: none;
+  }
