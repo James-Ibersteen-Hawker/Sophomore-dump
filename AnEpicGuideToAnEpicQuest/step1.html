@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Step 1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <hr class="woodrule">
+  <nav class="listnav">
+    <ul>
+      <li class="navlink" id="home"><a href="index.html">Home</a></li>
+      <li class="navlink" id="frsttep"><a href="step1.html">Step 1</a></li>
+      <li class="navlink" id="scndstep"><a href="step2.html">Step 2</a></li>
+      <li class="navlink" id="trdstep"><a href="step3.html">Step 3</a></li>
+      <li class="navlink" id="frthstep"><a href="step4.html">Step 4</a></li>
+      <li class="navlink" id="ffthstep"><a href="step5.html">Step 5</a></li>
+      <li class="navlink" id="about"><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <hr class="woodrule">
+  <section>
+  <h1>Step 1: <br>Build Your Party</h1>
+    <p>The first step before going on an <strong id="gold2">Epic Quest</strong> is to find out who is in your party. You must select based on strengths first, rather than on emotion. A good choice is typically either a knight, but often any other strong unit fits the job.</p>
+  </section>
+
+
+  <table class="selection">
+  <tr>
+    <td class="selectionbox">Knight<br>
+    <img class="statclaspic" id="classpic" src="knight.png">
+    <img class="actclaspic" id="classpic" src="knight.gif">
+      <p>Clad in armor from head to toe, a knight is good against a mighty foe.</p>
+    </td>
+    <td class="selectionbox">Barbarian<br>
+    <img class="statclaspic" id="classpic" src="barbarian.png">
+    <img class="actclaspic" id="classpic" src="barbarian.gif">
+      <p>Raging Berserkers, in the frenzy of the fight. They will hit anything, regardless if it's right.</p>
+    </td>
+    <td class="selectionbox">Archer<br>
+      <img class="statclaspic" id="classpic" src="archer.png">
+      <img class="actclaspic" id="classpic" src="archer.gif">
+        <p>Silent and deadly, swift and stealthy, the arrow sings through the air.</p>
+    </td>
+    <td class="selectionbox">Blacksmith<br>
+      <img class="statclaspic" id="classpic" src="blacksmith.png">
+      <img class="actclaspic" id="classpic" src="blacksmith.gif">
+        <p>Hammer in hand, can fix and repair, the tools of adventurers, to face the dangers they dare.</p>
+    </td>
+    <td class="selectionbox">Hunter<br>
+      <img class="statclaspic" id="classpic" src="hunter.png">
+      <img class="actclaspic" id="classpic" src="hunter.gif">
+        <p>Eagle in hand, a sword at his side. A hunter knows how his time to bide.</p>
+    </td>
+    <td class="selectionbox">Commander<br>
+      <img class="statclaspic" id="classpic" src="commander.png">
+      <img class="actclaspic" id="classpic" src="commander.gif">
+        <p>A leader to lead, and control the might. It is he who determines who wins or who loses the fight.</p>
+    </td>
+      </tr>
+</table>
+  <footer>
+    <!-- dragonhead -->
+      <img id="nextpic2" src="dragonhead.png">
+    <a href="step2.html">
+      <button type="button" onclick="show()" id="btnIDstep2">Next</button></a>
+    <!-- showelement -->
+    <script>
+        function show() {
+            document.getElementById('nextpic2')
+                .style.display = "block";
+            document.getElementById('btnIDstep2')
+                .style.display = "none";
+        }
+    </script>
+  </footer>
+</body>
+
+
+</html>

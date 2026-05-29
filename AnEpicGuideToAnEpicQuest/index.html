@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>An Epic Guide to an Epic Quest</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <hr class="woodrule">
+  <nav class="listnav">
+    <ul>
+      <li class="navlink" id="home"><a href="index.html">Home</a></li>
+      <li class="navlink" id="frsttep"><a href="step1.html">Step 1</a></li>
+      <li class="navlink" id="scndstep"><a href="step2.html">Step 2</a></li>
+      <li class="navlink" id="trdstep"><a href="step3.html">Step 3</a></li>
+      <li class="navlink" id="frthstep"><a href="step4.html">Step 4</a></li>
+      <li class="navlink" id="ffthstep"><a href="step5.html">Step 5</a></li>
+      <li class="navlink" id="about"><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <hr class="woodrule">
+  <section>
+    <h1>How to prepare for an <br>
+      <img class="static" id="epicquesttitle" src="statictransparent.png">
+      <img class="active" id="epicquesttitle" src="activetransparent.gif">
+    </h1>
+    <hr>
+    <p> - On <strong id="gold2">Epic Quests</strong> - <br>
+      When going on an <strong id="gold2">Epic Quest</strong> there are several things to keep in mind. The first thing
+      to know is in what context are you performing your <strong id="gold2">Epic Quest</strong>. The second main thing
+      is to be aware of who you are going to face on your <strong id="gold2">Epic Quest</strong>. And lastly, and MOST
+      importantly, it is absolutely crucial to know what the reward for your <strong id="gold2">Epic Quest</strong> will
+      be. Preferrably, in gold.</p>
+
+
+  </section>
+  <footer>
+    <audio controls loop id="myAudio">
+      <source src="ambience.wav" type="audio/wav">
+    </audio>
+    <!-- dragonhead -->
+    <img id="nextpic" src="dragonhead.png">
+    <a href="step1.html"><button type="button" onclick="show()" id="btnID">Next</button></a>
+    <!-- showelement -->
+    <script>
+      function show() {
+        document.getElementById('nextpic')
+          .style.display = "block";
+        document.getElementById('btnID')
+          .style.display = "none";
+      }
+    </script>
+  </footer>
+</body>
+
+
+</html>

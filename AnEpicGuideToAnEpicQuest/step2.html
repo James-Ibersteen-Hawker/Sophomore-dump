@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Step 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <hr class="woodrule">
+  <nav class="listnav">
+    <ul>
+      <li class="navlink" id="home"><a href="index.html">Home</a></li>
+      <li class="navlink" id="frsttep"><a href="step1.html">Step 1</a></li>
+      <li class="navlink" id="scndstep"><a href="step2.html">Step 2</a></li>
+      <li class="navlink" id="trdstep"><a href="step3.html">Step 3</a></li>
+      <li class="navlink" id="frthstep"><a href="step4.html">Step 4</a></li>
+      <li class="navlink" id="ffthstep"><a href="step5.html">Step 5</a></li>
+      <li class="navlink" id="about"><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <hr class="woodrule">
+  <section>
+    <h1>Step 2: <br>Know Your Destination</h1>
+    <p style="font-size: 20px;">The second step is to find out what your destination is. <br>While you are walking in
+      the forest, look out for the scary witches who try to curse you with their magic powers. <br>When you approach
+      Serbinenko's house, make sure you don't make eye contact with him or else he will set you on fire and YOU will
+      burn. <br>Last thing my friend, when you approach the scary Leonardo High School, be aware of the scary Mrs.
+      Leonardo da Vinci who will yell at you since EVERY DAY is a G Day. <br>Good Luck Fellow Travelers.<br>
+    
+    <div class="container">
+      <img src="witch.png" class="image">
+      <div class="middle">
+        <div class="text">Mrs. Leonard is not a witch.<br>But she can still get pretty cranky.<br>So beware.</div>
+      </div>
+    </div>
+    </p>
+
+
+  </section>
+  <footer>
+    <!-- dragonhead -->
+    <img id="nextpic" src="dragonhead.png">
+    <a href="step3.html"><button type="button" onclick="show()" id="btnID">Next</button></a>
+    <!-- showelement -->
+    <script>
+      function show() {
+        document.getElementById('nextpic')
+          .style.display = "block";
+        document.getElementById('btnID')
+          .style.display = "none";
+      }
+    </script>
+  </footer>
+</body>
+
+
+</html>
